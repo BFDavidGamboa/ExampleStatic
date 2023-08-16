@@ -2,16 +2,15 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class ExampleStatic {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Person person = new Person("Juan");
+        System.out.println(person);
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Person person2 = new Person("Karla");
+        System.out.println(person2);
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+        Person person3 = new Person("Carlos");
+        System.out.println(person3);
+
+         System.out.println("countPerson: " + Person.getPersonCount());
     }
 }
